@@ -1,7 +1,14 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<html lang="en">
+<%--
+  Created by IntelliJ IDEA.
+  User: Kang
+  Date: 2/06/23
+  Time: 5:47 p.m.
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
 <head>
+    <title>Jaskaran Kang - Assignment 3</title>
     <style media="screen">
         *,
         *:before,
@@ -77,8 +84,9 @@
     <div class="shape"></div>
     <div class="shape"></div>
 </div>
-<form action="<%=request.getContextPath()%>/login" method="post">
-    <h3>Login Here</h3>
+    <form action="<%=request.getContextPath()%>/signup" method="post">
+        <h2>You are not registered with us, create a new account. </h2>
+    <h3>Sign up</h3>
 
     <label for="username">Username</label>
     <input type="text" placeholder="User Name" name="username" id="username">
@@ -86,7 +94,7 @@
     <label for="password">Password</label>
     <input type="password" placeholder="Password" name="password" id="password">
 
-    <button type="submit">Log In</button>
+    <button type="submit">Sign Up</button>
 </form>
 </body>
 </html>
