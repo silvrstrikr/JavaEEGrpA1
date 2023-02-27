@@ -1,15 +1,14 @@
 <%--
   Created by IntelliJ IDEA.
   User: Mlane
-  Date: 2023-02-24
-  Time: 12:57 p.m.
+  Date: 2023-02-27
+  Time: 12:36 p.m.
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-
 <head>
-  <title>Household Census</title>
+  <title>Geographic Area</title>
   <link rel="stylesheet" href="lib/css/bootstrap.css" />
   <script src="lib/js/bootstrap.bundle.js"></script>
   <meta charset="utf-8" />
@@ -18,7 +17,7 @@
 
 <body>
 <div>
-  <p class="text-center">Household Census</p>
+  <p class="text-center">Geographic Area</p>
 </div>
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -52,26 +51,25 @@
     <table class="table">
       <thead class="table-dark">
       <tr>
-        <th scope="col">Geographic Area</th>
-        <th scope="col">Household Type</th>
-        <th scope="col">Household Size</th>
-        <th scope="col">Household Age Range</th>
-        <th scope="col">Household Earners</th>
-        <th scope="col">Total Income</th>
-        <th scope="col">Census Year</th>
-        <th scope="col">Number Reported</th>
+        <th scope="col">Code</th>
+        <th scope="col">Level</th>
+        <th scope="col">Name</th>
+        <th scope="col">Alternative Code</th>
       </tr>
       </thead>
       <tbody>
       <tr>
         <th scope="row">1</th>
+        <td>0</td>
+        <td>Canada</td>
         <td>1</td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>10</td>
         <td>1</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
+        <td>Newfoundland and Labrador</td>
+        <td>10</td>
       </tr>
       </tbody>
     </table>
