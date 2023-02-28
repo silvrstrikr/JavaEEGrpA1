@@ -16,12 +16,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
-<div>
-    <p class="text-center">Statistics Canada</p>
-</div>
+<body class="bg-secondary">
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +30,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Geographic Area</a>
+                        <a class="nav-link" href="GeographicArea.jsp">Geographic Area</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Census</a>
@@ -46,42 +43,60 @@
         </div>
     </nav>
 </header>
-
-<div>
-    <h2>Welcome to Sample Statistics Canada</h2>
-</div>
-
-<img id="flag" src="images/Flag-Canada.jpg" alt="Canadian flag" aria-label="Canadian flag">
-
-<%--<div class="row">
-    <div class="col-5">
-        <table class="table">
-            <thead class="table-dark">
-            <tr>
-                <th scope="col">Age Group</th>
-                <th scope="col">Census Year</th>
-                <th scope="col">Geographic Area</th>
-                <th scope="col">Combined</th>
-                <th scope="col">Male</th>
-                <th scope="col">Female</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>1</td>
-                <td>1</td>
-                <td>35151725</td>
-                <td>17264200</td>
-                <td>17887530</td>
-            </tr>
-            </tbody>
-        </table>
+<main class="w-75 p-lg-3" style="margin-left: 13.5em;">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/banner1.png" class="d-block w-100 h-50" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/banner2.jpg" class="d-block w-100 h-50" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/banner3.png" class="d-block w-100 h-50" alt="...">
+        </div>
     </div>
-    &lt;%&ndash;    <div class="col-5">&ndash;%&gt;
-    &lt;%&ndash;        <h1>dfrtgyhjuki</h1>&ndash;%&gt;
-    &lt;%&ndash;    </div>&ndash;%&gt;
-</div>--%>
+</div>
+    <div class="row my-2 mx-2">
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="GeographicArea.jsp" class="btn btn-primary">Geographic Area</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="" class="btn btn-primary">Area Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="Age.jsp" class="btn btn-primary">Age List</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</main>
+
+<!-- <div>
+    <h2>Welcome to Sample Statistics Canada</h2>
+</div><img id="flag" src="images/Flag-Canada.jpg" alt="Canadian flag" aria-label="Canadian flag"> -->
 
 </body>
 </html>
