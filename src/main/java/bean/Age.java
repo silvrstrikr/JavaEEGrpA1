@@ -1,6 +1,10 @@
 package bean;
 
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 public class Age {
+
     private Integer ageID;
     private String ageGroup;
     private String censusYear;
@@ -73,5 +77,4 @@ public class Age {
     public void setAgeID(Integer ageID) {
         this.ageID = ageID;
     }
-
 }

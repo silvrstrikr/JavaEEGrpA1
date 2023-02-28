@@ -1,5 +1,10 @@
 package bean;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 public class User {
     private int id;
     private String userName;
@@ -28,5 +33,4 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-
 }

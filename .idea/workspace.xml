@@ -9,7 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4abfbd5-bb51-4bd8-8ea6-213581064032" name="Changes" comment="test" />
+    <list default="true" id="c4abfbd5-bb51-4bd8-8ea6-213581064032" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/AgeGroupDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/CensusYearDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/GeographyAreaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldEarnersDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldSizeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldTypeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldsByAgeRangeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/TotalIncomeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/Age.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/Age.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AreaDao.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,6 +206,7 @@
       <workItem from="1677425725734" duration="3901000" />
       <workItem from="1677538374971" duration="3646000" />
       <workItem from="1677542081086" duration="201000" />
+      <workItem from="1677550322843" duration="5925000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1677250194520</created>
@@ -235,6 +250,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/web/RegisterServlet.java</url>
           <line>28</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/bean/User.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
