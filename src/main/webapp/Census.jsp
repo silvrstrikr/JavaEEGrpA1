@@ -16,12 +16,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
+<body class="bg-secondary">
 <div>
   <p class="text-center">Household Census</p>
 </div>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +46,7 @@
     </div>
   </nav>
 </header>
-
+<main class="w-75 p-lg-3" style="margin-left: 13.5em;">
 <div class="row">
   <div class="col-5">
     <table class="table">
@@ -62,7 +62,7 @@
         <th scope="col">Number Reported</th>
       </tr>
       </thead>
-      <tbody>
+      <tbody class="text-white">
       <tr>
         <th scope="row">1</th>
         <td>1</td>
@@ -76,10 +76,11 @@
       </tbody>
     </table>
   </div>
+
   <%--    <div class="col-5">--%>
   <%--        <h1>dfrtgyhjuki</h1>--%>
   <%--    </div>--%>
 </div>
-
+</main>
 </body>
 </html>

@@ -2,86 +2,97 @@
   Created by IntelliJ IDEA.
   User: Mlane
   Date: 2023-02-24
-  Time: 12:57 p.m.
+  Time: 12:56 p.m.
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-
+<html lang="en">
 <head>
-    <title>Statistics Canada</title>
-    <link rel="stylesheet" href="lib/css/bootstrap.css" />
-    <script src="lib/js/bootstrap.bundle.js"></script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style media="screen">
+        *,
+        *:before,
+        *:after{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #080710;
+        }
+        form{
+            height: 520px;
+            width: 400px;
+            background-color: rgba(255,255,255,0.13);
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.1);
+            box-shadow: 0 0 40px rgba(8,7,16,0.6);
+            padding: 50px 35px;
+        }
+        form *{
+            font-family: 'Poppins',sans-serif;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            outline: none;
+            border: none;
+        }
+        form h3{
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+            text-align: center;
+        }
+
+        label{
+            display: block;
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        input{
+            display: block;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(255,255,255,0.07);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        button{
+            margin-top: 50px;
+            width: 100%;
+            background-color: #ffffff;
+            color: #080710;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
-
 <body>
-<div>
-    <p class="text-center">Statistics Canada</p>
+<div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
 </div>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Geographic Area</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Census</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Age</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
+<form action="<%=request.getContextPath()%>/login" method="post">
+    <h3>Login Here</h3>
 
-    <div>
-        <h2>Welcome to Sample Statistics Canada</h2>
-    </div>
+    <label for="username">Username</label>
+    <input type="text" placeholder="User Name" name="username" id="username">
 
-<img id="flag" src="images/Flag-Canada.jpg" alt="Canadian flag" aria-label="Canadian flag">
+    <label for="password">Password</label>
+    <input type="password" placeholder="Password" name="password" id="password">
 
-<%--<div class="row">
-    <div class="col-5">
-        <table class="table">
-            <thead class="table-dark">
-            <tr>
-                <th scope="col">Age Group</th>
-                <th scope="col">Census Year</th>
-                <th scope="col">Geographic Area</th>
-                <th scope="col">Combined</th>
-                <th scope="col">Male</th>
-                <th scope="col">Female</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>1</td>
-                <td>1</td>
-                <td>35151725</td>
-                <td>17264200</td>
-                <td>17887530</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    &lt;%&ndash;    <div class="col-5">&ndash;%&gt;
-    &lt;%&ndash;        <h1>dfrtgyhjuki</h1>&ndash;%&gt;
-    &lt;%&ndash;    </div>&ndash;%&gt;
-</div>--%>
-
+    <button type="submit">Log In</button>
+</form>
 </body>
 </html>
