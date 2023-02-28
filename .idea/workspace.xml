@@ -9,20 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4abfbd5-bb51-4bd8-8ea6-213581064032" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/AgeGroupDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/CensusYearDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/GeographyAreaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldEarnersDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldSizeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldTypeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldsByAgeRangeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/TotalIncomeDao.java" afterDir="false" />
+    <list default="true" id="c4abfbd5-bb51-4bd8-8ea6-213581064032" name="Changes" comment="dao classes added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/Age.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/Age.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AreaDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AgeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AgeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/TotalIncomeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/TotalIncomeDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,24 +62,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/CPA10/Java Enterprise/Assignments/JavaEEGrpA1/src/main/webapp&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/CPA10/Java Enterprise/Assignments/JavaEEGrpA1/src/main/webapp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\CPA10\Java Enterprise\Assignments\JavaEEGrpA1\src\main\webapp" />
@@ -206,7 +202,8 @@
       <workItem from="1677425725734" duration="3901000" />
       <workItem from="1677538374971" duration="3646000" />
       <workItem from="1677542081086" duration="201000" />
-      <workItem from="1677550322843" duration="5925000" />
+      <workItem from="1677550322843" duration="6090000" />
+      <workItem from="1677607963955" duration="3794000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1677250194520</created>
@@ -222,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677250489670</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dao classes added">
+      <created>1677556283172</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677556283172</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +245,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="dao classes added" />
+    <option name="LAST_COMMIT_MESSAGE" value="dao classes added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
