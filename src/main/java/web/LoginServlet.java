@@ -7,10 +7,15 @@ import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 @WebServlet(name = "Login", value = "/login")
 public class LoginServlet extends HttpServlet {
     private UserDao DBUser =new UserDao();
+
+    public LoginServlet() throws SQLException, ClassNotFoundException {
+    }
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("index.jsp").forward(request,response);
@@ -21,7 +26,7 @@ public class LoginServlet extends HttpServlet {
         String userName=request.getParameter("username");
         String password=request.getParameter("password");
         try {
-            ResultSet rs=DBUser.getUser(userName,password);
+            ResultSet rs=DBUser.get(userName,password);
             if (!rs.isBeforeFirst() && rs.getRow()==0){
                 request.getRequestDispatcher("Signup.jsp").forward(request,response);
             }
@@ -39,7 +44,7 @@ public class LoginServlet extends HttpServlet {
         }
         catch (Exception e)
         {
-            throw new RuntimeException(e);
+            request.getRequestDispatcher("index.jsp").forward(request,response);
         }
 
     }

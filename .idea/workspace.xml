@@ -9,11 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4abfbd5-bb51-4bd8-8ea6-213581064032" name="Changes" comment="dao classes added">
+    <list default="true" id="c4abfbd5-bb51-4bd8-8ea6-213581064032" name="Changes" comment="dao total income">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/Age.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/Age.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/HouseHold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/HouseHold.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/AgeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AgeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AgeGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AgeGroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/CensusYearDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/CensusYearDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/GeographyAreaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/GeographyAreaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/HouseHoldDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/HouseHoldEarnersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldEarnersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/HouseHoldSizeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldSizeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/HouseHoldTypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldTypeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/HouseHoldsByAgeRangeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldsByAgeRangeDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/TotalIncomeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/TotalIncomeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/RegisterServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +78,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/CPA10/Java Enterprise/Assignments/JavaEEGrpA1/src/main/webapp",
     "node.js.detected.package.eslint": "true",
@@ -203,7 +214,7 @@
       <workItem from="1677538374971" duration="3646000" />
       <workItem from="1677542081086" duration="201000" />
       <workItem from="1677550322843" duration="6090000" />
-      <workItem from="1677607963955" duration="3794000" />
+      <workItem from="1677607963955" duration="7653000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1677250194520</created>
@@ -226,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677556283172</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dao total income">
+      <created>1677612560866</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677612560866</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,16 +264,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="dao classes added" />
-    <option name="LAST_COMMIT_MESSAGE" value="dao classes added" />
+    <MESSAGE value="dao total income" />
+    <option name="LAST_COMMIT_MESSAGE" value="dao total income" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/web/RegisterServlet.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bean/User.java</url>
           <line>35</line>

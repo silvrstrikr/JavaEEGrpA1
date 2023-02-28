@@ -14,6 +14,10 @@ import java.util.Random;
 @WebServlet(name = "RegisterServlet", value = "/signup")
 public class RegisterServlet extends HttpServlet {
     private UserDao DBUser=new UserDao();
+
+    public RegisterServlet() throws SQLException, ClassNotFoundException {
+    }
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -33,23 +37,15 @@ public class RegisterServlet extends HttpServlet {
 
         //emp.setId(generateId());
 
+        DBUser.update(user);
         try {
-            DBUser.registerUser(user);
-        }
-        catch (ClassNotFoundException e)
-        {
-            throw new RuntimeException(e);
-        }
-        try {
-            ResultSet rs=DBUser.getUser(userName,password);
+            ResultSet rs=DBUser.get(userName,password);
             while (!rs.isLast())
             {
                 rs.next();
                 String uname=rs.getString("userName");
                 request.setAttribute("userName",uname);
             }
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

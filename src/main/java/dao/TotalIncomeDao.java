@@ -6,19 +6,19 @@ import java.sql.*;
 
 
 public class TotalIncomeDao {
-    public static final String UPDATE = "INSERT INTO user"+
+    public static final String UPDATE = "INSERT INTO totalincome"+
             "(id,description) VALUES"+
             "(?,?);";
-    public static final String GET = "SELECT * FROM user "+
+    public static final String GET = "SELECT * FROM totalincome "+
             "WHERE id=?;";
-    public static final String GET_ALL = "SELECT * FROM user;";
-    public static final String DELETE = "DELETE from user "+
+    public static final String GET_ALL = "SELECT * FROM totalincome;";
+    public static final String DELETE = "DELETE from totalincome "+
             "WHERE id=?;";
     public static Connection connection;
 
     public TotalIncomeDao() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
-        connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census","root","Test12@");
+        connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census","admin","root");
     }
 
     public static int update(TotalIncome totalIncome) {
