@@ -19,7 +19,7 @@ public class AgeDao {
         ResultSet result=null;
         try
         {
-            connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census","root","Test12@");
+            connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census_db","admin","admin");
             PreparedStatement preparedStatement=connection.prepareStatement(GET);
             preparedStatement.setInt(1,id);
             preparedStatement.setInt(2,year);
@@ -35,7 +35,7 @@ public class AgeDao {
         ResultSet result=null;
         try
         {
-            connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census","root","Test12@");
+            connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census_db","admin","admin");
             PreparedStatement preparedStatement=connection.prepareStatement(GETPOPULATIONBYGENDER);
             preparedStatement.setInt(1,censusYear);
             result=preparedStatement.executeQuery();

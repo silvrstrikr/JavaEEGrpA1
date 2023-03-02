@@ -43,7 +43,7 @@
     <h1 class="text-center">Area details</h1>
   </div>
   <div class="row">
-    <div class="col-5">
+    <div class="col-7">
   <%
     ResultSet rs = (ResultSet) request.getAttribute("resultSet");
     while (rs.next()) {
@@ -68,7 +68,7 @@
       <%= rs.getString("level") %>
     </dd>
     <dt class = "col-sm-2">
-      Population in 2021
+      Population
     </dt>
     <dd class = "col-sm-10">
       <%= rs.getString("total") %>

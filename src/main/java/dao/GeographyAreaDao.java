@@ -16,7 +16,7 @@ public class GeographyAreaDao {
         ResultSet result=null;
         try
         {
-            connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census","root","Test12@");
+            connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census_db","admin","admin");
             PreparedStatement preparedStatement=connection.prepareStatement(GET);
             preparedStatement.setInt(1,id);
             result=preparedStatement.executeQuery();
@@ -31,7 +31,7 @@ public class GeographyAreaDao {
         Class.forName("com.mysql.jdbc.Driver");
         try
         {
-            connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census","root","Test12@");
+            connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census_db","admin","admin");
             PreparedStatement preparedStatement=connection.prepareStatement(GET_ALL);
             result=preparedStatement.executeQuery();
         }

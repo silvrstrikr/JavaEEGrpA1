@@ -14,7 +14,7 @@ public class UserDao {
         Class.forName("com.mysql.jdbc.Driver");
         try
         {
-            Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census","root","Test12@");
+            Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census_db","admin","admin");
             PreparedStatement preparedStatement=connection.prepareStatement(INSERT_USERS);
 
             preparedStatement.setInt(1, user.getId());
@@ -35,7 +35,7 @@ public class UserDao {
         Class.forName("com.mysql.jdbc.Driver");
         try
         {
-            Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census","root","Test12@");
+            Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census_db","admin","admin");
             PreparedStatement preparedStatement=connection.prepareStatement(GET_USER);
             preparedStatement.setString(1,name);
             preparedStatement.setString(2,pass);

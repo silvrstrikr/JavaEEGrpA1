@@ -10,38 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4abfbd5-bb51-4bd8-8ea6-213581064032" name="Changes" comment="simple table pages added.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/AgeGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/CensusYear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/HouseHold.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/HouseHoldEarners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/HouseHoldSize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/HouseHoldType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/HouseHoldsByAgeRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/TotalIncome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/AgeGroupDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/GeographyAreaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldEarnersDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldSizeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldTypeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldsByAgeRangeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/TotalIncomeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/DetailServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/GeographicAreaServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/TotalPopulationServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Detail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-02-27_9_55_a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-02-27_9_55_a_m___Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/Age.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/Age.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/GeographicArea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/AgeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AgeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AreaDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Age.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Census.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Census.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/GeographicArea.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/GeographicArea.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/HomePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/HomePage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/GeographyAreaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/GeographyAreaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Detail.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,15 +280,10 @@
           <line>17</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dao/AgeDao.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/web/GeographicAreaServlet.java</url>
           <line>54</line>
-          <properties class="web.GeographicAreaServlet" method="doPost">
+          <properties class="web.GeographicAreaServlet">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
