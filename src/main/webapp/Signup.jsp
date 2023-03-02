@@ -89,10 +89,10 @@
     <h3>Sign up</h3>
 
     <label for="username">Username</label>
-    <input type="text" placeholder="User Name" name="username" id="username">
+    <input type="text" placeholder="User Name" required name="username" id="username">
 
     <label for="password">Password</label>
-    <input type="password" placeholder="Password" name="password" id="password">
+    <input type="password" placeholder="Password" required name="password" id="password">
 
     <button type="submit">Sign Up</button>
 </form>

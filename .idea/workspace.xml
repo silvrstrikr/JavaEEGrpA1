@@ -10,12 +10,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4abfbd5-bb51-4bd8-8ea6-213581064032" name="Changes" comment="simple table pages added.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/AgeGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/CensusYear.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/HouseHold.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/HouseHoldEarners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/HouseHoldSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/HouseHoldType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/HouseHoldsByAgeRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/TotalIncome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/AgeGroupDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/GeographyAreaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldEarnersDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldSizeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldTypeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/HouseHoldsByAgeRangeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/TotalIncomeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/DetailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/GeographicAreaServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/TotalPopulationServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Detail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-02-27_9_55_a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-02-27_9_55_a_m___Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/Age.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/Age.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/GeographicArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AgeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AgeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AreaDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Age.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Census.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Census.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/GeographicArea.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/GeographicArea.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/HomePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/HomePage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Age.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Age.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Census.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Census.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/GeographicArea.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/GeographicArea.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Signup.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +63,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/GeographicArea.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -70,7 +98,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mlane/OneDrive/Desktop/School Winter 2023/PROG3060 - Java Enterprise/InClass/JavaEEGrpA1/src/main/webapp/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/CPA10/Java Enterprise/Assignments/JavaEEGrpA1/src/main/webapp/WEB-INF/lib/mysql-connector-j-8.0.32.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -84,11 +112,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\CPA10\Java Enterprise\Assignments\JavaEEGrpA1\src\main\java\dao" />
+      <recent name="C:\CPA10\Java Enterprise\Assignments\JavaEEGrpA1\src\main\java\bean" />
       <recent name="C:\Users\Mlane\OneDrive\Desktop\School Winter 2023\PROG3060 - Java Enterprise\InClass\JavaEEGrpA1\src\main\webapp\images" />
       <recent name="C:\Users\Mlane\OneDrive\Desktop\School Winter 2023\PROG3060 - Java Enterprise\InClass\JavaEEGrpA1\src\main\resources" />
       <recent name="C:\Users\Mlane\OneDrive\Desktop\School Winter 2023\PROG3060 - Java Enterprise\InClass\JavaEEGrpA1\src\main\webapp\WEB-INF\lib" />
-      <recent name="C:\CPA10\Java Enterprise\Assignments\JavaEEGrpA1\src\main\webapp" />
-      <recent name="C:\CPA10\Java Enterprise\Assignments\JavaEEGrpA1\src\main\webapp\WEB-INF\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\CPA10\Java Enterprise\Assignments\JavaEEGrpA1\src\main\webapp" />
@@ -203,6 +231,9 @@
       <workItem from="1677598865596" duration="965000" />
       <workItem from="1677599957051" duration="2841000" />
       <workItem from="1677612559723" duration="3558000" />
+      <workItem from="1677638300669" duration="7125000" />
+      <workItem from="1677717647482" duration="12205000" />
+      <workItem from="1677764856639" duration="3830000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1677250194520</created>
@@ -255,7 +286,46 @@
           <line>28</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/web/GeographicAreaServlet.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/web/GeographicAreaServlet.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/web/GeographicAreaServlet.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/web/TotalPopulationServlet.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dao/AgeDao.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/web/GeographicAreaServlet.java</url>
+          <line>54</line>
+          <properties class="web.GeographicAreaServlet" method="doPost">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.mysql.cj.jdbc.result.ResultSetImpl" memberName="updateId" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

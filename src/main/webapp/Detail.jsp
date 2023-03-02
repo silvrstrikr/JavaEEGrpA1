@@ -1,21 +1,21 @@
-<%@ page import="java.sql.ResultSet" %>
-<%--
+<%@ page import="java.sql.ResultSet" %><%--
   Created by IntelliJ IDEA.
   User: Mlane
-  Date: 2023-02-27
-  Time: 12:36 p.m.
+  Date: 2023-02-24
+  Time: 12:57 p.m.
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+
 <head>
-  <title>Geographic Area</title>
+  <title>Household Census</title>
   <link rel="stylesheet" href="lib/css/bootstrap.css" />
   <script src="lib/js/bootstrap.bundle.js"></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body >
+<body>
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -40,32 +40,46 @@
 </header>
 <main class="w-75 p-lg-3" style="margin-left: 13.5em;">
   <div>
-    <h1 class="text-center">List of areas in canada, with respective levels</h1>
+    <h1 class="text-center">Area details</h1>
   </div>
-<div class="row">
-  <div class="col-5">
-    <h6>Click on area name to view it's details</h6>
-    <table class="table">
-      <thead class="table-dark">
-      <tr>
-        <th scope="col">Level</th>
-        <th scope="col">Name</th>
-      </tr>
-      </thead>
-      <tbody>
-      <%
-        ResultSet rs = (ResultSet) request.getAttribute("resultSet");
-        while (rs.next()) {
-      %>
-      <tr>
-        <td><%= rs.getInt("level") %></td>
-        <td><a href="<%=request.getContextPath()%>/Detail?id=<%= rs.getInt("geographicAreaID") %>"><%=  rs.getString("name") %></a></td>
-      </tr>
-      <% } %>
-      </tbody>
-    </table>
+  <div class="row">
+    <div class="col-5">
+  <%
+    ResultSet rs = (ResultSet) request.getAttribute("resultSet");
+    while (rs.next()) {
+  %>
+  <dl class="row">
+    <dt class = "col-sm-2">
+      Name
+    </dt>
+    <dd class = "col-sm-10">
+      <%= rs.getString("name") %>
+    </dd>
+    <dt class = "col-sm-2">
+      Code
+    </dt>
+    <dd class = "col-sm-10">
+      <%= rs.getString("code") %>
+    </dd>
+    <dt class = "col-sm-2">
+      Level
+    </dt>
+    <dd class = "col-sm-10">
+      <%= rs.getString("level") %>
+    </dd>
+    <dt class = "col-sm-2">
+      Population in 2021
+    </dt>
+    <dd class = "col-sm-10">
+      <%= rs.getString("total") %>
+    </dd>
+  </dl>
+  <% } %>
+      <div>
+        <a href="<%=request.getContextPath()%>/GeographicArea" >Back to Geographic Area</a>
+      </div>
+    </div>
   </div>
-</div>
 </main>
 </body>
 </html>

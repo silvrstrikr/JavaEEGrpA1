@@ -1,35 +1,48 @@
 package dao;
 import bean.Age;
+import bean.TotalIncome;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class AgeDao {
-    public int registerAge (Age emp) throws ClassNotFoundException {
-        String INSERT_USERS_SQL = "INSERT INTO age" +
-                "(id, ageGroup, censusYear, geographicArea, combined, male, female) VALUES " +
-                "(?, ?, ?, ?, ?, ?, ?);";
-        int result = 0;
 
+    public static final String GET = "SELECT  g.name, g.code, g.level,sum(h.combined) as total FROM  geographicarea g INNER JOIN age h  ON h.geographicArea = g.geographicAreaID where g.geographicAreaID=? AND h.censusyear=? group by geographicarea;";
+    public static final String GETPOPULATIONBYGENDER = "SELECT  g.name, g.code, g.level,sum(h.male) as maletotal, sum(h.female) as femaletotal FROM  geographicarea g INNER JOIN age h  ON h.geographicArea = g.geographicAreaID WHERE h.censusyear=?  group by h.geographicArea order by g.name;";
+
+    public static Connection connection;
+
+
+
+
+    public ResultSet getAreaPopulation(Integer id,Integer year) throws ClassNotFoundException {
         Class.forName("com.mysql.jdbc.Driver");
-        // Get Connection
-        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/employeedb", "root", "MyTr0ubl3M@ker");
-             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
-            preparedStatement.setInt(1,1);
-            preparedStatement.setString(2, emp.getAgeGroup());
-            preparedStatement.setString(3, emp.getCensusYear());
-            preparedStatement.setString(4, emp.getGeographicArea());
-            preparedStatement.setString(5, emp.getCombined());
-            preparedStatement.setString(6, emp.getMale());
-            preparedStatement.setString(7, emp.getFemale());
-
-            result = preparedStatement.executeUpdate();
-        } catch (SQLException ex) {
-            ex.printStackTrace();
+        ResultSet result=null;
+        try
+        {
+            connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census","root","Test12@");
+            PreparedStatement preparedStatement=connection.prepareStatement(GET);
+            preparedStatement.setInt(1,id);
+            preparedStatement.setInt(2,year);
+            result=preparedStatement.executeQuery();
         }
-
+        catch (SQLException exception){
+            exception.printStackTrace();
+        }
+        return result;
+    }
+    public ResultSet getTotalPopulation(Integer censusYear) throws ClassNotFoundException {
+        Class.forName("com.mysql.jdbc.Driver");
+        ResultSet result=null;
+        try
+        {
+            connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/census","root","Test12@");
+            PreparedStatement preparedStatement=connection.prepareStatement(GETPOPULATIONBYGENDER);
+            preparedStatement.setInt(1,censusYear);
+            result=preparedStatement.executeQuery();
+        }
+        catch (SQLException exception){
+            exception.printStackTrace();
+        }
         return result;
     }
 }

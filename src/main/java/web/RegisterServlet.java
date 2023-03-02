@@ -16,9 +16,7 @@ public class RegisterServlet extends HttpServlet {
     private UserDao DBUser=new UserDao();
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         request.getRequestDispatcher("Signup.jsp").forward(request,response);
-
     }
 
     @Override
@@ -27,11 +25,8 @@ public class RegisterServlet extends HttpServlet {
         String password=request.getParameter("password");
 
         User user=new User();
-
         user.setUserName(userName);
         user.setPassword(password);
-
-        //emp.setId(generateId());
 
         try {
             DBUser.registerUser(user);
@@ -54,12 +49,5 @@ public class RegisterServlet extends HttpServlet {
             throw new RuntimeException(e);
         }
         request.getRequestDispatcher("HomePage.jsp").forward(request,response);
-
-    }
-    public int generateId(){
-        long a=System.currentTimeMillis()*(new Random()).nextInt();
-        String asString=" "+a;
-        String as5String=asString.substring((asString.length()-5),(asString.length()));
-        return Integer.parseInt(as5String);
     }
 }

@@ -1,29 +1,36 @@
 package bean;
 
-public class Area {
-    private String code;
-    private String level;
+public class GeographicArea {
+    private Integer geographicAreaID;
+    private Integer code;
+    private Integer level;
     private String name;
     private String alternativeCode;
 
+    public Integer getGeographicAreaID() {
+        return geographicAreaID;
+    }
 
+    public void setGeographicAreaID(Integer geographicAreaID) {
+        this.geographicAreaID = geographicAreaID;
+    }
 
-//Code
-    public String getCode() {
+    //Code
+    public Integer getCode() {
         return code;
     }
 
-    public void setCode(String code) {
+    public void setCode(Integer code) {
         this.code = code;
     }
 
 
 //Level
-    public String getLevel() {
+    public Integer getLevel() {
         return level;
     }
 
-    public void setLevel(String level) {
+    public void setLevel(Integer level) {
         this.level = level;
     }
 
